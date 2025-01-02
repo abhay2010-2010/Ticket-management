@@ -8,3 +8,5 @@ connect.on('connected',()=>{
 connect.on('error',(err)=>{
     console.log('Error connecting to MongoDB...',err);
 });
+
+const xx=2;
