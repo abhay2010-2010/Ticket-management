@@ -7,6 +7,13 @@ app.get("/api",(req,res)=>{
 });
 
 
-app.listen(PORT,()=>console.log(`Server running on port ${PORT}`));
+app.listen(PORT,async()=>{
+    try {
+        await 
+        console.log(`Server is running on port ${PORT}`);
+    } catch (error) {
+       console.log("Failed to connet connection"); 
+    }
+});
 
 // Connect to MongoDB
